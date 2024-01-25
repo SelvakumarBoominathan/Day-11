@@ -1,0 +1,186 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid black;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+}
+
+.header {
+  min-width: 100%;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #014f86;
+}
+
+.header-main {
+  min-height: 5em;
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 3.5em;
+  color: white;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+}
+
+.sub-header {
+  min-height: 50%;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+/* body */
+
+.main-body {
+  display: flex;
+  width: 100%;
+  min-height: 42rem;
+}
+
+.body-image {
+  min-height: auto;
+  min-width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 0.5rem;
+}
+
+.body-image img {
+  max-width: 100%;
+}
+
+.body-form {
+  min-height: auto;
+  min-width: 65%;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Form */
+
+form {
+  max-width: 80%;
+  margin: 5%;
+  font-size: x-large;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 300;
+}
+
+input {
+  font-size: 25px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 15px 5px;
+  border: black 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 300;
+  text-shadow: black;
+  letter-spacing: 1px;
+  max-width: 40%;
+}
+
+.flexprop {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+
+@media screen and (max-width:550px) {
+
+  .container {
+    margin: 0%;
+  }
+
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+    padding-bottom: 10px;
+  }
+
+  .header {
+    min-height: 5rem;
+  }
+
+  .header-main {
+    min-height: 3em;
+    padding: 5%;
+  }
+
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 30rem;
+  }
+
+  .body-image {
+    min-height: 3em;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0%;
+  }
+
+  .body-image img {
+    max-width: 70%;
+  }
+
+  form {
+    max-width: 100%;
+    margin: 5%;
+    font-size: large;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 100;
+  }
+
+}
